@@ -14,6 +14,8 @@ def main():
 
   # Create the model
   x = tf.placeholder(tf.float32, [None, 3840000])
+
+  p ="some code"
   W = tf.Variable(tf.zeros([3840000, 2]))
   b = tf.Variable(tf.zeros([2]))
   y = tf.matmul(x, W) + b
